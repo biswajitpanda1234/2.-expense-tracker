@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css" integrity="sha512-dUOcWaHA4sUKJgO7lxAQ0ugZiWjiDraYNeNJeRKGOIpEq4vroj1DpKcS3jP0K4Js4v6bXk31AAxAxaYt3Oi9xw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="tracker.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container border-radius ">
+        <div class="flex top">
+            <div class="budget shadow">
+                <h3>Budget</h3>
+                <input type="number" placeholder="Enter your budget" id="budget" />
+
+                <button onclick="getBudget()" class="border-radius ">Set Budget</button>
+            </div>
+            <div class="expense border-radius shadow">
+                <h3>Expences</h3>
+                <input type="text" placeholder="Enter Title of your Product" id="productName" />
+                <div >
+                    <input type="number" placeholder="Amout of your product" id="productPrice" />
+                    <input type="date" id="date" />
+                </div>
+
+                <button onclick="createContainer()" id="yourList" class="border-radius ">Add Your List</button>
+                <button style="display: none;" id="yourList2" class="border-radius ">Add Your List</button>
+            </div>
+        </div>
+        <div class="rest-amount border-radius shadow" style="color: white;">
+            <div>
+                <h3>Total Budget</h3>
+                <p>0</p>
+            </div>
+            <div>
+                <h3>Expense</h3>
+                <p>0</p>
+            </div>
+            <div>
+                <h3>Balance</h3>
+                <p>0</p>
+            </div>
+        </div>
+        <div class="expense-list border-radius shadow">
+            <h2>Expense List</h2>
+            <!-- <div class="expense_container">
+                <div style="display: flex;">
+                    <p>31-01-2004</p>
+                    <p style="font-weight: bold;">sabund</p>
+                </div>
+                <p style="color: rgb(145, 145, 145);">amount</p>
+                <div>
+                    <i class="ri-edit-box-line"></i>
+                    <i class="ri-delete-bin-line"></i>
+                </div>
+                
+            </div> -->
+        </div>   
+    </div>
+</body>
+<script src="tracker.js"></script>
+
+</html>
